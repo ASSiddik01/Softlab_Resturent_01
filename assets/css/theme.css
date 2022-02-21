@@ -25,6 +25,10 @@ a.nav-link.active {
     color: #fff;
 }
 
+section{
+    margin: 70px;
+}
+
 
 /* Header CSS */
 span.cart_count.position-absolute {
