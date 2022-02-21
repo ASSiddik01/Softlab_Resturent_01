@@ -1,3 +1,5 @@
+/* Google Poppins Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 /* Base CSS */
@@ -5,6 +7,26 @@
     color: #ff6d19;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.theme_button {
+    background-color: #fc801e;
+    color: #fff;
+}
+
+a:hover, a:focus{text-decoration: none}
+input:focus,button:focus,textarea:focus{outline: none;}
+img{max-width: 100%;height: auto;}
+a.nav-link.active {
+    color: #fff;
+}
+
+
+/* Header CSS */
 span.cart_count.position-absolute {
     top: 5px;
     left: 13px;
@@ -19,4 +41,21 @@ span.cart_count.position-absolute {
 
 header i.fa-solid.fa-cart-shopping {
     font-size: 22px;
+}
+
+/* Banner */
+.banner_info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.banner_info {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.hero_area {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
 }
