@@ -1,0 +1,22 @@
+
+
+/* Base CSS */
+.theme_color{
+    color: #ff6d19;
+}
+
+span.cart_count.position-absolute {
+    top: 5px;
+    left: 13px;
+    background-color: #000;
+    color: #fff;
+    /* padding: 5px; */
+    width: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+}
+
+header i.fa-solid.fa-cart-shopping {
+    font-size: 22px;
+}
