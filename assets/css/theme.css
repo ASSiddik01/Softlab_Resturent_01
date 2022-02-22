@@ -20,7 +20,7 @@ body{
 
 a:hover, a:focus{text-decoration: none}
 input:focus,button:focus,textarea:focus{outline: none;}
-img{max-width: 100%;height: auto;}
+img{max-width: 100%;}
 a.nav-link.active {
     color: #fff;
 }
