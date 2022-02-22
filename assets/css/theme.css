@@ -78,3 +78,31 @@ header i.fa-solid.fa-cart-shopping {
     background-color: #fcc092;
     transition: all 1s;
 }
+
+/* Footer */
+
+.insta_gallary{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.insta_gallary img{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer{
+    background-color: #fcc092;
+}
