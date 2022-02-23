@@ -3,11 +3,11 @@
 
 
 /* Base CSS */
-.theme_color, hr{
+.theme_color, hr {
     color: #ff6d19;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,14 +18,23 @@ body{
     color: #fff;
 }
 
-a:hover, a:focus{text-decoration: none}
-input:focus,button:focus,textarea:focus{outline: none;}
-img{max-width: 100%;}
+a:hover, a:focus {
+    text-decoration: none
+}
+
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
 a.nav-link.active {
     color: #fff;
 }
 
-section{
+section {
     margin-top: 80px;
 }
 
@@ -81,13 +90,13 @@ header i.fa-solid.fa-cart-shopping {
 
 /* Footer */
 
-.insta_gallary{
+.insta_gallary {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 
-.insta_gallary img{
+.insta_gallary img {
     width: 100px;
     border-radius: 20px;
 }
@@ -98,25 +107,25 @@ header i.fa-solid.fa-cart-shopping {
     padding: 0;
 }
 
-.links ul li a{
+.links ul li a {
     text-decoration: none;
     color: #000;
 }
 
-footer{
+footer {
     background-color: #fcc092;
 }
 
 /* Testimonials */
-.testim-inner{
+.testim-inner {
 
-	margin-top: 40px;
+    margin-top: 40px;
 
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 
-	position: relative;
+    position: relative;
 
-	text-align: center;
+    text-align: center;
 
     padding: 0 25px 25px 25px;
 
@@ -136,15 +145,15 @@ footer{
 
 
 
-.testim-inner:hover{
+.testim-inner:hover {
 
     border: 1px solid #fc801e;
 
-	-webkit-transform: scale(1.025);
+    -webkit-transform: scale(1.025);
 
-	    -ms-transform: scale(1.025);
+    -ms-transform: scale(1.025);
 
-	        transform: scale(1.025);
+    transform: scale(1.025);
 
     -webkit-transition: all 0.5s;
 
@@ -156,65 +165,66 @@ footer{
 
 
 
-.testim-inner img{
+.testim-inner img {
 
-	position: relative;
+    position: relative;
 
-	display: inline-block;
+    display: inline-block;
 
-	margin-top: -55px;
+    margin-top: -55px;
 
-	max-width: 110px;
+    max-width: 110px;
 
-	border:1px solid #e5efff;
+    border: 1px solid #e5efff;
 
-	border-radius: 50% 50%;
+    border-radius: 50% 50%;
 
-	padding: 5px 5px;
+    padding: 5px 5px;
 
-	background-color: #fff;
-
-}
-
-
-
-.testim-inner:hover img{
-
-	border:1px solid #fc801e;
+    background-color: #fff;
 
 }
 
 
 
-.testim-inner h6{
+.testim-inner:hover img {
 
-	margin-bottom: 5px;
-
-	font-size: 16px;
-
-	line-height: 24px;
-
-	font-weight: 700;
-
-	color: #fc801e;
+    border: 1px solid #fc801e;
 
 }
 
 
 
-.testim-inner p{
+.testim-inner h6 {
 
-	font-size: 17px;
+    margin-bottom: 5px;
 
-	line-height: 28px;
+    font-size: 16px;
 
-	font-style: italic;
+    line-height: 24px;
 
-	margin-top: 20px;
+    font-weight: 700;
 
-	margin-bottom: 5px;
+    color: #fc801e;
 
 }
+
+
+
+.testim-inner p {
+
+    font-size: 17px;
+
+    line-height: 28px;
+
+    font-style: italic;
+
+    margin-top: 20px;
+
+    margin-bottom: 5px;
+
+}
+
 .example {
     display: -ms-grid;
     display: grid;
@@ -222,9 +232,9 @@ footer{
     -o-transition: all .5s;
     transition: all .5s;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background: -o-linear-gradient(top, white, black);
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: linear-gradient(to bottom, white, black);
@@ -281,10 +291,105 @@ body {
     margin-bottom: 15px
 }
 
-.popular, .popular .card-body{
+.popular, .popular .card-body {
     background-color: #fcc092;
 }
 
-.item{
+.item {
     background-color: #fff;
+}
+
+/* Order Step */
+.square {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    margin: 10px;
+}
+
+.circular {
+    height: 100px;
+    width: 100px;
+    position: relative;
+
+    left: 38%;
+}
+
+.circular .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #fcc092;
+    border-radius: 100%;
+
+}
+
+.circular .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 45px;
+    font-weight: 500;
+    color: #fc801e;
+}
+
+.circular .bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+.number{
+    font-size: 20px;
+}
+
+.circle .bar .progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+    background: #fc801e;
+}
+
+.circle .left .progress {
+    z-index: 1;
+    animation: left 1s linear both;
+}
+
+@keyframes left {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.circle .right {
+    transform: rotate(180deg);
+    z-index: 3;
+
+}
+
+.circle .right .progress {
+    animation: right 1s linear both;
+    animation-delay: 1s;
+}
+
+@keyframes right {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+#order .card{
+    border: 0;
+    border-right: 2px solid #f5af7a;
+    background:none;
 }
